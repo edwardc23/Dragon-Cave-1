@@ -14,6 +14,7 @@ public class Main {
                 "Which cave will you go into? (1 or 2)");
         Scanner in = new Scanner(System.in);
         int choices=in.nextInt();
+
 while(choices != 0){
        if(choices==1){
                 System.out.println("You approach the cave...\n" +
@@ -40,6 +41,12 @@ while(choices != 0){
            choices = in.nextInt();
        }
         }
+if(choices == 0)
+{
+    System.out.println("You stupid You turned around?"+ "\n"
+                        +"GO HOME!"
+            );
+}
 
     }
 }
